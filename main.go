@@ -14,9 +14,9 @@ func main() {
     // Mendaftarkan handler untuk route "/"
     http.HandleFunc("/", haloDuniaHandler)
 
-    // Menjalankan server pada port 8080
-    fmt.Println("Server berjalan pada http://localhost:8080")
-    if err := http.ListenAndServe(":8080", nil); err != nil {
+    // Menjalankan server pada port 80
+    fmt.Println("Server berjalan pada http://localhost:80")
+    if err := http.ListenAndServe(":80", nil); err != nil {
         fmt.Println("Gagal menjalankan server:", err)
     }
 }
